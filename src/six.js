@@ -94,3 +94,10 @@
       for (let cc of team) {
         console.log('use of to do:',cc);
       }
+
+      let paras = document.querySelectorAll("h1");
+      console.log("h1 are",...paras);
+      for (let p of [...paras]) {    //[...] 必须
+        p.classList.add("test");
+        console.log('h1 class are:',p.classList);
+      }
