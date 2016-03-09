@@ -16,7 +16,7 @@ module.exports = {
     module: {
         loaders: [{
             test: /\.js$/,
-            loader: 'babel-loader',
+            loader: 'babel-loader!babel-polyfill',
         }, {
             test: /\.jsx$/,
             loader: 'babel-loader!jsx-loader?harmony'

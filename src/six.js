@@ -1,4 +1,4 @@
-
+    require("babel-polyfill");
     //1
       var shuzhu = new Array(1,2,3,4,5);
       var max = Math.max.apply(null,shuzhu);
@@ -101,3 +101,22 @@
         p.classList.add("test");
         console.log('h1 class are:',p.classList);
       }
+
+      console.log(5 + NaN + undefined);
+      console.log(5 + NaN);
+      console.log(5 + undefined);
+
+      var clock = function *(_) {
+        while (true) {
+          yield 1;
+          console.log('Tick!');
+          yield 2;
+          console.log('Tock!');
+        }
+      };
+
+      var clockman = clock();
+      clockman.next();
+      clockman.next();
+      clockman.next();
+

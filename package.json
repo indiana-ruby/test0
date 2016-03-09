@@ -8,6 +8,7 @@
   "dependencies": {
     "babel-cli": "^6.0.0",
     "babel-core": "^6.5.2",
+    "babel-polyfill": "^6.6.1",
     "glob": "^5.0.10",
     "gulp": "3.9.0",
     "gulp-clean": "^0.3.1",
